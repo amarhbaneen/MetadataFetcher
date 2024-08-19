@@ -1,0 +1,100 @@
+.metadata-form-container {
+    max-width: 600px;
+    margin: auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.form-title {
+    font-size: 2rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-subtitle {
+    font-size: 1rem;
+    color: #666;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.metadata-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.url-input-group {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.url-input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.remove-url-button {
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    padding: 8px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1.25rem;
+    line-height: 1;
+}
+
+.remove-url-button:hover {
+    background-color: #c0392b;
+}
+
+.add-url-button,
+.submit-button {
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background-color 0.3s;
+}
+
+.add-url-button {
+    background-color: #3498db;
+    margin-right: 10px;
+}
+
+.add-url-button:hover {
+    background-color: #2980b9;
+}
+
+.submit-button {
+    background-color: #2ecc71;
+}
+
+.submit-button:hover {
+    background-color: #27ae60;
+}
+
+.error-message {
+    color: #e74c3c;
+    margin-top: 10px;
+    font-size: 0.875rem;
+    text-align: center;
+}
+
+.loading-spinner-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,54 @@
+.metadata-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 20px auto;
+  }
+  
+  .metadata-card, .error-card {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .metadata-card:hover, .error-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+  }
+  
+  .error-card {
+    border: 1px solid #e57373;
+    color: #e57373;
+  }
+  
+  .error-title {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+  
+  .error-message {
+    font-size: 14px;
+  }
+  
+  .metadata-content {
+    text-align: center;
+  }
+  
+  .metadata-title {
+    font-size: 18px;
+    margin-bottom: 8px;
+  }
+  
+  .metadata-description {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .metadata-image {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  

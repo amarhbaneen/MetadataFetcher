@@ -9,6 +9,7 @@ Morgan: Logs HTTP requests for monitoring and debugging.
 MetaDataFetcher: Contains our function to fetch metadata from URLs.
 */
 
+const cors = require('cors'); // Import CORS middleware
 const express = require('express'); // Import Express to set up our server
 const rateLimit = require('express-rate-limit'); // Import rate limiter to keep requests in check
 const helmet = require('helmet'); // Add some security headers with Helmet
@@ -26,6 +27,7 @@ const limiter = rateLimit({
 const app = express(); // Creating the Express app
 const port = 5000; // Using port 5000 for running the server
 
+app.use(cors()); //  to able access from Frontend
 app.use(limiter); // Apply the rate limiter to all requests
 app.use(express.json()); // Parse JSON in requests
 
