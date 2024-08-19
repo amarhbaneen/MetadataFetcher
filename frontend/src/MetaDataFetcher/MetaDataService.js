@@ -3,7 +3,7 @@ import axios from 'axios';
 /* 
  A service to handle the API request and response
 */
-const API_ENDPOINT = 'http://localhost:5000/fetcher';
+const API_ENDPOINT = 'https://metadatafetcher-production.up.railway.app/fetcher';
 
 const fetchMetadata = async (urls) => {
     console.log(urls); // Log the URLs to verify
